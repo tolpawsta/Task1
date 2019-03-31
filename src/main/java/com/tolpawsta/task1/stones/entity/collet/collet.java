@@ -1,22 +1,25 @@
 package com.tolpawsta.task1.stones.entity.collet;
 
-import com.tolpawsta.task1.stones.enums.ColletMaterilType;
-
+/**
+ *
+ */
 public class Collet {
 
-    private ColletMaterilType material;
+    private ColletMaterialType material;
 
-    public Collet(){
+    public Collet() {
+    }
 
+    public Collet(ColletMaterialType material) {
+        super();
+        this.material = material;
     }
-    public Collet(ColletMaterilType material){
-        this.material=material;
-    }
-    public ColletMaterilType getMaterial() {
+
+    public ColletMaterialType getMaterial() {
         return material;
     }
 
-    public void setMaterial(ColletMaterilType material) {
+    public void setMaterial(ColletMaterialType material) {
         this.material = material;
     }
 
